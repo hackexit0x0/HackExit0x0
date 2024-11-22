@@ -1,6 +1,6 @@
 <?php
 # include db config file
-include "../php/dbconnect.php";
+# include "../php/dbconnect.php";
 # check sesion
 session_start();
 

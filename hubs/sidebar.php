@@ -9,17 +9,42 @@
           </div>
         </form>
 
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active"> Dashboard </a>
-          <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-            Inbox
-            <span class="badge badge-primary badge-pill ml-auto">14</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Orders</a>
-          <a href="#" class="list-group-item list-group-item-action">Products</a>
-          <a href="#" class="list-group-item list-group-item-action">Customers</a>
-          <a href="#" class="list-group-item list-group-item-action">Reports</a>
+        <div class="list-group rounded">
+          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
+          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
+          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
+          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
+          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
+          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
+              <!-- Dropdown under "Reports" -->
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle w-100 mt-2 btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Web File Upload
+                </button>
+                <div class="dropdown-menu w-100 mt-2 " aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item text-white" href="#">No Restriction
+                    <span class="badge badge-danger badge-pill">Easy</span>
+                    </a>
+                    <a class="dropdown-item text-white" href="#">Content Type
+                    <span class="badge badge-danger badge-pill">Easy</span>
+                    </a>
+                    
+                    <a class="dropdown-item text-white" href="#">Blacklist EXT Validation
+                    <span class="badge badge-danger badge-pill">Medium</span>
+                    </a>
+
+                    <a class="dropdown-item text-white" href="#">Whitelist EXT Validation - 1
+                    <span class="badge badge-danger badge-pill">Medium</span>
+                    </a>
+
+                    <a class="dropdown-item text-white" href="#">Whitelist EXT Validation - 2
+                    <span class="badge badge-danger badge-pill">Medium</span>
+                    </a>
+                </div>
+            </div>
         </div>
+
+       
     </div>
     <div class="col-md-9">
 

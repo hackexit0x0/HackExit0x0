@@ -18,6 +18,7 @@
     <div class="navbar-dark text-white">
       <div class="container">
         <?php include 'nav.php'; ?>
+        <?php include '../php/dbconnect.php'; ?>
       </div>
     </div>
 
