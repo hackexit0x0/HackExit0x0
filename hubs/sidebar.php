@@ -1,3 +1,7 @@
+
+<?php
+$hostname = gethostbyname(gethostname());
+?>
 <div class="row">
     <div class="col-md-3">
         <form class="mb-3">
@@ -22,22 +26,22 @@
                     Web File Upload
                 </button>
                 <div class="dropdown-menu w-100 mt-2 " aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item text-white" href="#">No Restriction
+                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/index.php">No Restriction
                     <span class="badge badge-danger badge-pill">Easy</span>
                     </a>
-                    <a class="dropdown-item text-white" href="#">Content Type
+                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/challenge2.php">Content Type
                     <span class="badge badge-danger badge-pill">Easy</span>
                     </a>
                     
-                    <a class="dropdown-item text-white" href="#">Blacklist EXT Validation
+                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/challenge3.php">Blacklist EXT Validation
                     <span class="badge badge-danger badge-pill">Medium</span>
                     </a>
 
-                    <a class="dropdown-item text-white" href="#">Whitelist EXT Validation - 1
+                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/challenge4.php">Whitelist EXT Validation - 1
                     <span class="badge badge-danger badge-pill">Medium</span>
                     </a>
 
-                    <a class="dropdown-item text-white" href="#">Whitelist EXT Validation - 2
+                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/challenge5.php">Whitelist EXT Validation - 2
                     <span class="badge badge-danger badge-pill">Medium</span>
                     </a>
                 </div>
