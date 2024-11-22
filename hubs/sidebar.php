@@ -1,6 +1,6 @@
 
 <?php
-$hostname = gethostbyname(gethostname());
+include "../php/dbconnect.php";
 ?>
 <div class="row">
     <div class="col-md-3">
@@ -13,35 +13,40 @@ $hostname = gethostbyname(gethostname());
           </div>
         </form>
 
-        <div class="list-group rounded">
-          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
-          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
-          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
-          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
-          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
-          <a class="btn btn-outline-primary  w-100 mt-2 btn-sm" href="#">Home</a>
+        <div class="list-group rounded bg-dark">
+        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Inbox
+            <span class="badge badge-primary badge-pill ml-auto">14</span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Inbox
+            <span class="badge badge-primary badge-pill ml-auto">14</span>
+          </a><a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Inbox
+            <span class="badge badge-primary badge-pill ml-auto">14</span>
+          </a>
               <!-- Dropdown under "Reports" -->
               <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle w-100 mt-2 btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Web File Upload
                 </button>
                 <div class="dropdown-menu w-100 mt-2 " aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/index.php">No Restriction
+                    <a class="dropdown-item text-white" href="#">No Restriction
                     <span class="badge badge-danger badge-pill">Easy</span>
                     </a>
-                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/challenge2.php">Content Type
+                    <a class="dropdown-item text-white" href="#">Content Type
                     <span class="badge badge-danger badge-pill">Easy</span>
                     </a>
                     
-                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/challenge3.php">Blacklist EXT Validation
+                    <a class="dropdown-item text-white" href="#">Blacklist EXT Validation
                     <span class="badge badge-danger badge-pill">Medium</span>
                     </a>
 
-                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/challenge4.php">Whitelist EXT Validation - 1
+                    <a class="dropdown-item text-white" href="#">Whitelist EXT Validation - 1
                     <span class="badge badge-danger badge-pill">Medium</span>
                     </a>
 
-                    <a class="dropdown-item text-white" href="<?php $hostname;?>/HackExit0x0/hubs/FileUploadWeb/challenge5.php">Whitelist EXT Validation - 2
+                    <a class="dropdown-item text-white" href="#">Whitelist EXT Validation - 2
                     <span class="badge badge-danger badge-pill">Medium</span>
                     </a>
                 </div>

@@ -1,3 +1,11 @@
+<?php
+// Include database configuration file
+include "php/dbconnect.php";
+
+
+?>
+
+<!-- Navbar Section -->
 <div class="navbar-dark text-white">
     <div class="container">
         <!-- Main Navigation Bar -->
@@ -5,14 +13,14 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <!-- Scrolling marquee message -->
                 <marquee behavior="alternate" class="text-danger">
-                    HackExit0x0 provides cyber security trainings to strengthen your team's offensive and defensive skills. Created by a Swiss cyber security pioneer.
+                    HackExit0x0 provides cybersecurity training to strengthen your team's offensive and defensive skills. Created by a Swiss cybersecurity pioneer.
                 </marquee>
             </div>
         </nav>
         <hr> <!-- Divider between the main navbar and secondary navbar -->
 
         <!-- Secondary Navigation Bar with Button -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Secondary navbar">
             <div class="container-fluid">
                 <!-- Toggler button for mobile view -->
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,14 +44,21 @@
                             </ul>
                         </li>
                     </ul>
+
                     <?php
-                   $trackip = $_SERVER['REMOTE_ADDR'];
-                   $KEY = password_hash($trackip, PASSWORD_BCRYPT);
-                   $KEY2 = md5($trackip);
+                    // Capture the user's IP address
+                    $trackip = $_SERVER['REMOTE_ADDR'];
+
+                    // Generate secure tokens for authentication
+                    $KEY = password_hash($trackip, PASSWORD_BCRYPT); // Secure hash
+                    $KEY2 = md5($trackip); // MD5 hash
                     ?>
+
                     <!-- Access Button -->
                     <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                        <a href="auth/?token=<?php echo $KEY; echo "&jwt=" ?><?php echo $KEY2; ?>" class="btn btn-success btn-sm btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left">Access</a>
+                        <a href="<?php echo $domain;?>/auth/?token=<?php echo $KEY; ?>&jwt=<?php echo $KEY2; ?>" class="btn btn-success btn-sm btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left">
+                            Access
+                        </a>
                     </div>
                 </div>
             </div>

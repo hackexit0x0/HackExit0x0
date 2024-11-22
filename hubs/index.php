@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="container py-5 mb-5">
+    <div class="container py-5 mb-5 ">
       <?php include "sidebar.php"; ?>
 
       <?php
@@ -33,7 +33,7 @@
 
       // Display data in table if records are found
       if ($result->num_rows > 0) {
-        echo '<table class="table">';
+        echo '<table class="table bg-dark rounded">';
         echo '  <thead class="thead-light">';
         echo '    <tr>';
         echo '      <th scope="col">SNO</th>';

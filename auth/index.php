@@ -1,3 +1,16 @@
+<?php
+# include db config file
+include "../php/dbconnect.php";
+# check sesion
+session_start();
+
+# cehck session s
+if (isset($_SESSION["username"])){
+   header("Location: ../hubs");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

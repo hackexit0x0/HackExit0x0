@@ -1,7 +1,7 @@
 <?php
 
 # php and db connection
-
+$domain = "http://127.0.0.1/HackExit0x0";
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";

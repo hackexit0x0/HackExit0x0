@@ -1,16 +1,16 @@
 <?php
 # include db config file
-# include "../php/dbconnect.php";
+include "../php/dbconnect.php";
 # check sesion
 session_start();
 
 # cehck session s
 if (!isset($_SESSION["username"])){
-   
     # redirect to the login page
-    header("Location: http://{$servername}/HackExit0x0/auth/");
+    header("Location: $domain/auth/");
 }
 ?>
+<br>
 <div class="navbar-dark text-white">
     <div class="container">
         <!-- Main Navigation Bar -->
