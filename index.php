@@ -33,10 +33,11 @@
             <div class="lead mb-3 text-mono text-success">This is a starter template with a jumbotron</div>
             <div class="text-mono">
               <a href="#!" title="Download Theme" class="btn btn-success btn-shadow px-3 my-2 ml-0 text-left">
-                A Button
+              <b> Offensive </b> 
               </a>
+              
               <a href="#!" class="btn btn-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left">
-                Another Button
+          <b>    Defensive</b> 
               </a>
             </div>
           </div>
